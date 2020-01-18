@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.toolbar {
+  background-color: #554afb;
+  color: white;
+  height: 56px;
+  width: 100%;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "title selectTime";
+}
+
+.title {
+  line-height:56px;
+  margin-left: 16px;
+}
+
+.selectTime {
+  margin-right: 16px;
+  height: 36px;
+  margin-top: 10px;
+}
+
+.content {
+  display: grid;
+  max-width: 1200px;
+  margin: 16px auto 16px;
+  padding: 0 16px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "chart clist rlist tlist";
+}
+
+.chart {
+  grid-area: chart;
+  width: 500px;
+  max-width: 80vw;
+  height: 500px;
+}
+
+.clist {
+  grid-area: clist;
+}
+
+.rlist {
+  grid-area: rlist;
+}
+
+.tlist {
+  grid-area: tlist;
+}
+
+@media (max-width: 999px) {
+  .content {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+            "chart clist"
+            "chart rlist"
+            "chart tlist";
+  }
+}
+
+@media (max-width: 799px) {
+  .content {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+            "chart"
+            "clist"
+            "rlist"
+            "tlist";
+  }
+}

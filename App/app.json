@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Trash Cam",
+    "description": "Smart sorting trash can",
+    "slug": "smart-sort",
+    "privacy": "unlisted",
+    "sdkVersion": "32.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#cccccc",
+    "icon": "./icon.png",
+    "loading": {
+      "icon": "./icon.png",
+      "hideExponentText": false
+    },
+    "packagerOpts": {
+      "assetExts": [
+        "ttf",
+        "mp4",
+        "otf",
+        "xml"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#000000"
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}
