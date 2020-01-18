@@ -1,0 +1,2 @@
+# TrashCam
+Uses computer vision to classify the waste into the right section (Recycle, Compost or Landfill) using Tensorflow model. Won 5 prizes at LAHacks 2019 including - SustainLA (Best Sustainability Hack), Best Hardware Hack and Best ML Hack. Made a hardware prototype using Raspberry Pi, camera and servo motors. Made a ReactJS web app displaying trash analytics and a React Native mobile app gamifying the trash throwing experience.
